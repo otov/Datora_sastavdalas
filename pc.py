@@ -32,9 +32,19 @@ def pasutijums():
     cena=tk.StringVar()
     dienas=tk.StringVar()
 
+    darbinieki=ttk.Combobox(logs1, textvariable=vardsuzvards)
+    prieksmets1=ttk.Combobox(logs1, textvariable=prieksmets)
+    cena1=ttk.Combobox(logs1, textvariable=cena)
+    dienas1=ttk.Entry(logs1,textvariable=dienas)
 
+    darbinieki["values"] = ("Mareks Bahmnais","Deniss Stepanovs", "Raimonds Leja", "Juris Kalniņš")
+    prieksmets1["values"] = ("Monitors","Tastatūra", "Pele", "Austiņas", "Mikrofons", "Webcam")
+    cena1["values"] = ("5 €","10 €","20 €")
 
-
+    darbinieki.grid(row=1, column=2,pady=30, padx=10)
+    prieksmets1.grid(row=2,column=2,pady=30, padx=10)
+    cena1.grid(row=3,column=2,pady=30, padx=10)
+    dienas1.grid(row=4, column=2,pady=30,padx=10)
 
 
 
